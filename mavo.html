@@ -19,15 +19,17 @@
     <main mv-app="product" mv-storage="https://github.com/Doogether/mavo-beta-project/blob/master/product.json">
 
   <div>
-    <a property="product" typeof="Painting" mv-multiple mv-attribute="none">
+    <article mv-multiple property="product" mv-order="desc">
+      <a property class="url" target="_blank">
       <img property="image" />
-      <p property="name" mv-default="[readable(to(filename(image), '.'))]"></p>
-    </a>
+      <p property="name"></p>
+      <p property="price"></p>
+      </a>
+    </article>
   </div>
-
-  <footer>All art belongs to the awesome <a href="http://julesmuck.com">Jules Muck</a>, used here with permission.</footer>
 </main>
 
+<!--
   <main mv-app="portfolio" mv-storage="https://github.com/mavoweb/data/portfolio">
   <header>
     <h1><a href="http://julesmuck.com"><img src="http://julesmuck.com/wp-content/uploads/2016/04/mucklogoBLCK.png" alt="Jules Muck" class="logo" /></a></h1>
@@ -46,7 +48,7 @@
     <div mv-app="storageTest" mv-storage="local">
       My first Mavo app!
     </div>
-
+-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
