@@ -16,12 +16,11 @@
   
   <body>
     
-    <main mv-app class="talks" mv-storage="https://github.com/Doogether/mavo-beta-project/blob/master/data.json">
-  <h1>[count(talk)] sessions at [count(event)] events ([count(upcoming)] events upcoming)</h1>
-  <article mv-multiple property="event" mv-order="desc">
-    <meta property="upcoming" content="[date > $now]" />
+    <main mv-app class="talks" mv-storage="https://github.com/Doogether/mavo-beta-project/blob/master/product.json">
+  <h1>[count(product)] produits</h1>
+  <article mv-multiple property="product" mv-order="desc">
     <h1 mv-multiple property="talk">
-      <span property="title" mv-default>TBD</span>
+      <span property="name" mv-default></span>
       <span property class="type">
         <select>
           <option selected>Talk</option>
