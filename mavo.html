@@ -15,38 +15,32 @@
   </head>
   
   <body>
-    
-    <main mv-app class="talks" mv-storage="https://github.com/Doogether/mavo-beta-project/blob/master/product.json">
-  <h1>[count(product)] produits</h1>
-  <article mv-multiple property="product" mv-order="desc">
-    <h1 mv-multiple property="talk">
-      <span property="name" mv-default></span>
-      <span property class="type">
-        <select>
-          <option selected>Talk</option>
-          <option>Keynote</option>
-          <option>Workshop</option>
-          <option>Panel</option>
-        </select>
-      </span>
-      <a property class="video" target="_blank">Video</a>
-      <a property class="slides" target="_blank">Slides</a>
-    </h1>
-    <h2>
-      <a property="url" target="_blank">
-        <span property="name"></span>
-      </a>
-    </h2>
-    <p class="date"><time property="date"></time></p>
-    <address class="flag-[country]">
-      <span property="city"></span>,
-      <span property="country" mv-edit="#countries"></span>
-    </address>
-    <p class="comment" property></p>
-    <p class="comment" style="display: [iff(feedback, block, none)]">
-      <a property="feedback" target="_blank">Feedback</a>
-    </p>
-  </article>
+
+    <main mv-app="product" mv-storage="https://github.com/Doogether/mavo-beta-project/blob/master/product.json">
+
+  <div>
+    <a property="painting" typeof="Painting" mv-multiple mv-attribute="none">
+      <img property="image" />
+      <p property="name" mv-default="[readable(to(filename(image), '.'))]"></p>
+    </a>
+  </div>
+
+  <footer>All art belongs to the awesome <a href="http://julesmuck.com">Jules Muck</a>, used here with permission.</footer>
+</main>
+
+  <main mv-app="portfolio" mv-storage="https://github.com/mavoweb/data/portfolio">
+  <header>
+    <h1><a href="http://julesmuck.com"><img src="http://julesmuck.com/wp-content/uploads/2016/04/mucklogoBLCK.png" alt="Jules Muck" class="logo" /></a></h1>
+  </header>
+
+  <div>
+    <a property="painting" typeof="Painting" mv-multiple mv-attribute="none">
+      <img property="image" />
+      <p property="name" mv-default="[readable(to(filename(image), '.'))]"></p>
+    </a>
+  </div>
+
+  <footer>All art belongs to the awesome <a href="http://julesmuck.com">Jules Muck</a>, used here with permission.</footer>
 </main>
 
     <div mv-app="storageTest" mv-storage="local">
