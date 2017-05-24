@@ -2,11 +2,8 @@
 	"product": [
 		{
 			"id": "B000JNKABW",
-			"url": [
-				"https://www.amazon.fr/Casio-Unisexe-MQ-24-7BLL-Casual-Analogique/dp/B000JNKABW?SubscriptionId=AKIAJOR3YDNR5OOYSRVA&tag=callo04-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B000JNKABW",
-				"ttps://www.amazon.fr/Casio-Unisexe-MQ-24-7BLL-Casual-Analogique/dp/B000JNKABW?SubscriptionId=AKIAJOR3YDNR5OOYSRVA&tag=callo04-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B000JNKABW"
-			],
-			"price": 9,
+			"url": "https://www.amazon.fr/Casio-Unisexe-MQ-24-7BLL-Casual-Analogique/dp/B000JNKABW?SubscriptionId=AKIAJOR3YDNR5OOYSRVA&tag=callo04-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B000JNKABW",
+			"price": "9",
 			"name": "e",
 			"image": "https://images-eu.ssl-images-amazon.com/images/I/41MN6xrKPcL.jpg"
 		},
